@@ -1,0 +1,129 @@
+.containers {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    height: 100%;
+    
+}
+
+.credentials, .background {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    overflow: hidden;
+    transition: all 0.7s ease-in-out;  
+}
+
+.credentials {
+    justify-content: center;
+}
+
+.prompt {
+    align-self: center;
+}
+
+/* Login */
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    border-radius: 12px;
+    padding: 7%;
+    border-color: lightblue;
+}
+
+.login-title {
+    font-family: 'Montserrat';
+    padding-left: 10%;
+}
+
+.auth {
+    outline-color: lightblue;
+    width: 80%;
+    border-radius: 50px;
+    padding: 5% 7%;
+    margin: 5% 1%;
+    font-size: 16px;
+    border-color: purple;
+    font-family: 'Varela Round';
+}
+
+.submit {
+    background-color: purple;
+    align-self: center;
+    width: 40%;
+    padding: 4% 4%;
+    margin: 1%;
+    border-radius: 25px;
+    color: #fff;
+    font-family: 'Montserrat';
+    cursor: pointer;
+}
+
+.submit:hover {
+    background-color: blueviolet;
+}
+
+/* Background */
+
+.circle {
+    width: 10%;
+    height: 10%;
+    border-radius: 50%;
+    box-shadow: 5px 5px 12px inset rgba(25, 136, 155, 0.8);
+    transition: all 0.7s ease-in-out;
+}
+
+.background {
+    flex-direction: column;
+}
+
+/* .background:hover {
+    width: 40%;
+    height: 40%;
+    background-image: linear-gradient(to right, rgba(25, 136, 155, 1), rgba(190, 30, 50, 0.6));
+    animation: grow 4s ease-in-out;
+    animation: bounce 0.5s cubic-bezier(.5,0.05,1,.5) alternate;
+} */
+
+.background:hover .circle1 {
+    animation: grow 4s ease-in-out infinite;
+}
+
+.background:hover .circle2 {
+    animation: bounce 2s cubic-bezier(0,0.05,1,.5) infinite alternate;
+    animation-delay: 0;
+}
+
+.background:hover .circle3 {
+    animation: shwing 1s ease-in-out infinite;
+}
+
+.background:hover .circle4 {
+    animation: shwings 10s ease-in-out;
+}
+
+@keyframes grow {
+    0% { width: 40%; height: 40% }
+    50% { width: 30%; height: 30%; }
+    100% { width: 40%; height: 40%; }
+}
+
+
+@keyframes bounce {
+    from { transform: translate3d(0, 0, 0);     }
+    to   { transform: translate3d(0, 200px, 0); }
+}
+
+@keyframes shwings {
+    from { opacity: 1;     }
+    to   { opacity: 0; }
+}
+
+@keyframes shwing {
+    from { transform: translate3d(0, 0, 0);     }
+    to   { transform: translate3d(2000px, 0, 0); }
+}

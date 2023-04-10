@@ -1,0 +1,78 @@
+.container {
+    position: relative;
+    display: flex;
+    height: 100vh;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.logos {
+    font-family: 'Italianno';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    color:rgb(255, 255, 255);
+    font-size: 36px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.thobe-link > h2 {
+    left: 45%;
+}
+
+.abaya-link > h2 {
+    right: 45%;
+}
+
+h1 {
+    text-orientation: upright;
+    writing-mode: vertical-lr;
+    margin: 0 auto;
+    font-family: 'Almarai', sans-serif;
+    color: aliceblue;
+    text-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+}
+
+.bg-a > h1 {
+    color:rgb(0, 0, 0);
+}
+
+.thobe-link > h2 {
+    color: rgb(255, 255, 255);
+}
+
+.thobe-link, .abaya-link, .bg-a, .bg-t{
+    display: flex;
+    flex: 1;
+    height: 100%;
+    align-items: center;
+    overflow: hidden;
+    transition: all 0.7s ease-in-out;
+    background-color: rgba(0, 0, 0);
+}
+
+.bg-a:hover, .bg-t:hover {
+    transform: scale(1.2);
+    opacity: 0.5;
+}
+
+.bg-a {
+    background-image: url("hi.jpg");
+    background-position: center;
+}
+
+.bg-t {
+    background-image: url("man.jpg");
+    background-position: center;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        height: 150vh;
+    }
+}

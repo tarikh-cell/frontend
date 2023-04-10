@@ -1,0 +1,128 @@
+.Basket {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    justify-content: center;
+    
+}
+
+th {
+    text-align: left;
+}
+
+.basket-wrapper {
+    display: flex;
+}
+
+/* Empty Trolley Message */
+.empty-message {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    width: 50%;
+}
+
+.empty-message > ion-icon  {
+    font-size: 128px;
+}
+
+/* Cart */
+
+.cart {
+    width: 75%;
+    align-self: center;
+    border-radius: 10px;
+    padding: 5%;
+    margin: 3%;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 3px 5px, rgba(0, 0, 0, 0.24) 0px 1px 5px;
+}
+
+h3 {
+    font-family: 'Montserrat';
+}
+
+.cart-item {
+    /* width: 80%; */
+    /* justify-content: space-between; */
+}
+
+.cart-title {
+    text-align: center;
+    font-family: 'Montserrat';
+}
+
+.item-desc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Montserrat';
+    margin-bottom: 3%;
+}
+
+.cart-image {
+    width: 100px;
+    height: 120px;
+    border-radius: 5px;
+}
+
+.change-quantity {
+    display: flex;
+    justify-content: space-between;
+    width: 15%;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 3px 5px, rgba(0, 0, 0, 0.24) 0px 1px 5px;
+}
+
+.change-quantity > button > ion-icon {
+    font-size: 16px;
+    padding: 5px;
+}
+
+/* CheckOut */
+.checkout {
+    width: 23%;
+    font-family: 'Montserrat';
+    border-radius: 10px;
+    padding: 2%;
+    margin: 3%;
+    max-height: 300px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 3px 5px, rgba(0, 0, 0, 0.24) 0px 1px 5px;
+}
+
+.checkout-tag {
+    border-radius: 5px;
+    text-align: center;
+    padding: 5% 10%;
+    width: 80%;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 3px 5px, rgba(0, 0, 0, 0.24) 0px 1px 5px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.promo-text {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    outline-color: lightblue;
+    padding: 4%;
+    border: 2px solid;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.promo-button {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: bold;
+    outline-color: lightblue;
+    padding: 4%;
+    border: 2px solid;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}

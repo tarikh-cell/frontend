@@ -1,0 +1,58 @@
+.Header {
+    display: flex;
+    height: 10%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    transition: top 0.3s;
+    /* border-bottom: solid 1px lightgray; */
+}
+
+.drop {
+    transition: height 0.5s ease-in-out;
+}
+
+.nav-logo {
+    text-decoration: none;
+    font-family: 'Italianno';
+    padding-left: 10%;
+}
+
+.mode {
+    padding-right: 10%;
+}
+
+.links {
+    display: flex;
+}
+
+.link {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 500;
+    padding: 20px;
+}
+
+.link:hover {
+    color: #0088a9;
+}
+
+.icon {
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+}
+
+ion-icon {
+    font-size: 24px;
+    --ionicon-stroke-width: 38px;
+}
+
+ion-icon:hover {
+    transform: scale(1.2);
+    /* font-size: 28px; */
+}

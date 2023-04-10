@@ -1,0 +1,18 @@
+.Homepage {
+    display: flex;
+    flex-direction: column;
+    animation: fadeInAnimation 2s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+     }
+}
